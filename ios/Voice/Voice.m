@@ -39,7 +39,7 @@
     
     self.audioSession = [AVAudioSession sharedInstance];
 
-    // Added by DalinarKholin
+    // Updated by DalinarKholin 
     if (self.audioSession) {
         [self.audioSession setCategory:AVAudioSessionCategoryRecord error:nil];
         [self.audioSession setMode:AVAudioSessionModeMeasurement error:nil];
