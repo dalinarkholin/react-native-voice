@@ -157,8 +157,6 @@
 
     self.recognitionRequest = nil;
     // Added by Dalinar Kholin
-    self.recognitionRequest = [[SFSpeechAudioBufferRecognitionRequest alloc] init];
-    [self.recognitionRequest endAudio];
     AVAudioSession *avAudioSession = [AVAudioSession sharedInstance];
     if (avAudioSession) {
         [avAudioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
